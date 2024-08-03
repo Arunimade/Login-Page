@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("https://tse3.mm.bing.net/th?id=OIP.niLmQFDFmZXFiNLMwVnEJwHaEK&pid=Api&P=0&h=180") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+.login-container {
+    background: rgba(1, 1, 1, 0.521);
+    padding: 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.login-container h2 {
+    margin-bottom: 20px;
+}
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 250, 250, 0.936);
+    color: rgb(14, 14, 14);
+    font-size: 16px;
+}
+.login-container input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+}
+.login-container .checkbox-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.login-container .checkbox-container input {
+    width: auto;
+    margin-right: 10px;
+}
+.login-container .checkbox-container a {
+    color: #ddd;
+    text-decoration: none;
+}
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #6e0dd0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.login-container button:hover {
+    background: #9c2cf2;
+}
+.login-container .register {
+    margin-top: 20px;
+}
+.login-container .register a {
+    color: #ddd;
+    text-decoration: none;
+}
