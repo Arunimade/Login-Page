@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="loginApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style5.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body ng-controller="LoginController">
+    <div class="login-container">
+        <h2>Login</h2>
+        <input type="text" ng-model="username" placeholder="Username">
+        <input type="password" ng-model="password" placeholder="Password">
+        <div class="checkbox-container">
+            <label>
+                <input type="checkbox" ng-model="rememberMe"> Remember me
+            </label>
+            <a href="#">Forgot password?</a>
+        </div>
+        <button ng-click="login()">Login</button>
+        <div class="register">
+            Don't have an account? <a href="reg.html">Register</a>
+        </div>
+    </div>
+    <script>
+        var app = angular.module('loginApp', []);
+
+app.controller('LoginController', ['$scope', '$window', function($scope, $window) {
+    $scope.username = '';
+    $scope.password = '';
+    $scope.rememberMe = false;
+
+    $scope.login = function() {
+        if ($scope.username === 'admin' && $scope.password === 'password') {
+            // Successful login
+            $window.location.href = 'Home.html';
+        } else {
+            alert('Invalid username or password');
+        }
+    };
+}]);
+
+    </script>
+</body>
+</html>
